@@ -8,17 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ==========================================
   // 1. الإعدادات المركزية لبيانات الشركة (Central Company Configuration)
-  // تنبيه للمطور: اترك القيم null حتى اعتماد البيانات الحقيقية من إدارة الشركة
   // ==========================================
   const COMPANY_CONFIG = {
     name: 'شركة أصول لنقل العفش بالرياض',
-    // تنبيه قبل النشر: حدد الدومين الفعلي المعتمد هنا
     domain: 'https://osoolmove.com',
-    // رقم الهاتف الفعلي: اتركه null إلى حين توفره رسمياً
-    phoneDisplay: null, // مثال عند التوفر: '+966 50 123 4567'
-    phoneTel: null,     // مثال عند التوفر: '+966501234567'
-    // رقم واتساب: اتركه null إلى حين توفره رسمياً (أرقام فقط بدون +)
-    whatsappNumber: null, // مثال عند التوفر: '966501234567'
+    phoneDisplay: '01210568977',
+    phoneTel: '+201210568977',
+    whatsappNumber: '201210568977',
     city: 'الرياض، المملكة العربية السعودية',
   };
 
@@ -32,14 +28,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // التعامل مع عناصر الهاتف
     phoneElements.forEach((el) => {
       if (COMPANY_CONFIG.phoneTel && COMPANY_CONFIG.phoneDisplay) {
-        if (el.tagName === 'A') {
-          el.href = `tel:${COMPANY_CONFIG.phoneTel}`;
+        const link = el.tagName === 'A' ? el : el.querySelector('a');
+        if (link) {
+          link.href = `tel:${COMPANY_CONFIG.phoneTel}`;
         }
         const textTarget = el.querySelector('[data-contact-text="phone"]');
         if (textTarget) {
           textTarget.textContent = COMPANY_CONFIG.phoneDisplay;
         }
         el.classList.remove('hidden');
+        if (el.classList.contains('items-center') && !el.classList.contains('flex') && !el.classList.contains('inline-flex')) {
+          el.classList.add('inline-flex');
+        }
         el.removeAttribute('aria-disabled');
       } else {
         // إخفاء أو تعطيل العنصر مؤقتاً لعدم وجود رقم حقيقي
@@ -51,10 +51,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // التعامل مع عناصر واتساب
     whatsappElements.forEach((el) => {
       if (COMPANY_CONFIG.whatsappNumber) {
-        if (el.tagName === 'A') {
-          el.href = `https://wa.me/${COMPANY_CONFIG.whatsappNumber}`;
+        const link = el.tagName === 'A' ? el : el.querySelector('a');
+        if (link) {
+          link.href = `https://wa.me/${COMPANY_CONFIG.whatsappNumber}`;
         }
         el.classList.remove('hidden');
+        if (el.classList.contains('items-center') && !el.classList.contains('flex') && !el.classList.contains('inline-flex')) {
+          el.classList.add('inline-flex');
+        }
         el.removeAttribute('aria-disabled');
       } else {
         // إخفاء أو تعطيل العنصر مؤقتاً لعدم وجود رقم حقيقي
@@ -206,11 +210,11 @@ document.addEventListener('DOMContentLoaded', () => {
       // 2. التحقق من رقم الجوال
       clearError(phoneInput);
       const phoneVal = phoneInput.value.trim().replace(/\s+/g, '');
-      const saudiPhoneRegex = /^(05|5|\+9665|9665)[0-9]{8}$/;
+      const validPhoneRegex = /^(05[0-9]{8}|5[0-9]{8}|\+9665[0-9]{8}|9665[0-9]{8}|01[0-9]{9}|\+201[0-9]{9}|201[0-9]{9}|[0-9]{9,14})$/;
       if (!phoneVal) {
         showError(phoneInput, 'يرجى إدخال رقم الجوال للتواصل.');
-      } else if (!saudiPhoneRegex.test(phoneVal)) {
-        showError(phoneInput, 'يرجى إدخال رقم جوال سعودي صحيح يبدأ بـ 05 (مثال: 0512345678).');
+      } else if (!validPhoneRegex.test(phoneVal)) {
+        showError(phoneInput, 'يرجى إدخال رقم جوال صحيح للتواصل (مثال: 0512345678 أو 01210568977).');
       }
 
       // 3. التحقق من نوع الخدمة
