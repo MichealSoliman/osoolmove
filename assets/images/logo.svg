@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80" fill="none" role="img" aria-label="شعار شركة أصول لنقل العفش">
+  <!-- Icon Mark -->
+  <g transform="translate(10, 10)">
+    <rect width="60" height="60" rx="14" fill="#102A43"/>
+    <!-- Box Base -->
+    <path d="M16 28L30 19L44 28V43L30 51L16 43V28Z" stroke="#0F766E" stroke-width="2.5" fill="#0F766E" fill-opacity="0.15" stroke-linejoin="round"/>
+    <!-- Inner Box Flaps & Arrow -->
+    <path d="M30 19V51" stroke="#0F766E" stroke-width="2" stroke-linecap="round"/>
+    <path d="M16 28L30 36L44 28" stroke="#0F766E" stroke-width="2" stroke-linejoin="round"/>
+    <!-- Dynamic Move Arrow Accent -->
+    <path d="M24 33L36 33M36 33L31 28M36 33L31 38" stroke="#F97316" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="48" cy="14" r="4" fill="#F97316"/>
+  </g>
+  <!-- Text Brand -->
+  <g transform="translate(82, 46)">
+    <text x="0" y="0" font-family="'Tajawal', 'Segoe UI', system-ui, sans-serif" font-size="28" font-weight="800" fill="#102A43" letter-spacing="-0.5">أُصُـــول</text>
+    <text x="0" y="19" font-family="'Tajawal', 'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="600" fill="#0F766E" letter-spacing="0.5">لنقل العفش بالرياض</text>
+  </g>
+</svg>
