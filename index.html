@@ -120,15 +120,15 @@
         </a>
 
         <!-- قائمة سطح المكتب (Desktop Navigation Links) -->
-        <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-sm font-semibold text-slate-700"
+        <nav class="hidden lg:flex items-center gap-5 xl:gap-7 text-sm font-semibold text-slate-700"
           aria-label="التنقل الرئيسي">
-          <a href="#hero" class="hover:text-[#0F766E] transition-colors py-2">الرئيسية</a>
-          <a href="#services" class="hover:text-[#0F766E] transition-colors py-2">خدماتنا</a>
-          <a href="#why-us" class="hover:text-[#0F766E] transition-colors py-2">لماذا أصول؟</a>
+          <a href="/" class="hover:text-[#0F766E] transition-colors py-2">الرئيسية</a>
+          <a href="/services/furniture-moving-in-riyadh/" class="hover:text-[#0F766E] transition-colors py-2">خدماتنا</a>
+          <a href="/furniture-moving-prices/" class="hover:text-[#0F766E] transition-colors py-2 font-bold text-[#0F766E]">الأسعار</a>
+          <a href="/areas/" class="hover:text-[#0F766E] transition-colors py-2">أحياء الرياض</a>
+          <a href="/cities/" class="hover:text-[#0F766E] transition-colors py-2">نقل بين المدن</a>
           <a href="#steps" class="hover:text-[#0F766E] transition-colors py-2">خطوات النقل</a>
-          <a href="#pricing-factors" class="hover:text-[#0F766E] transition-colors py-2">الأسعار</a>
-          <a href="#service-areas" class="hover:text-[#0F766E] transition-colors py-2">مناطق الخدمة</a>
-          <a href="#about" class="hover:text-[#0F766E] transition-colors py-2">عن أصول</a>
+          <a href="#why-us" class="hover:text-[#0F766E] transition-colors py-2">لماذا أصول؟</a>
           <a href="#faq" class="hover:text-[#0F766E] transition-colors py-2">الأسئلة الشائعة</a>
         </nav>
 
@@ -185,16 +185,37 @@
       <!-- روابط القائمة الداخلية -->
       <nav class="flex-1 overflow-y-auto p-5 space-y-1 text-base font-semibold text-slate-800"
         aria-label="روابط قائمة الجوال">
-        <a href="#hero"
+        <a href="/"
           class="mobile-nav-link flex items-center justify-between p-3 rounded-xl hover:bg-teal-50 hover:text-[#0F766E] transition-colors">
           <span>الرئيسية</span>
           <svg class="w-4 h-4 text-slate-400 rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
           </svg>
         </a>
-        <a href="#services"
+        <a href="/furniture-moving-prices/"
+          class="mobile-nav-link flex items-center justify-between p-3 rounded-xl hover:bg-teal-50 text-[#0F766E] font-bold transition-colors">
+          <span>دليل الأسعار</span>
+          <svg class="w-4 h-4 text-[#0F766E] rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+        <a href="/areas/"
           class="mobile-nav-link flex items-center justify-between p-3 rounded-xl hover:bg-teal-50 hover:text-[#0F766E] transition-colors">
-          <span>خدماتنا</span>
+          <span>نقل العفش بأحياء الرياض</span>
+          <svg class="w-4 h-4 text-slate-400 rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+        <a href="/cities/"
+          class="mobile-nav-link flex items-center justify-between p-3 rounded-xl hover:bg-teal-50 hover:text-[#0F766E] transition-colors">
+          <span>نقل العفش بين مدن المملكة</span>
+          <svg class="w-4 h-4 text-slate-400 rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+        <a href="/services/furniture-moving-in-riyadh/"
+          class="mobile-nav-link flex items-center justify-between p-3 rounded-xl hover:bg-teal-50 hover:text-[#0F766E] transition-colors">
+          <span>خدمات النقل بالرياض</span>
           <svg class="w-4 h-4 text-slate-400 rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
           </svg>
@@ -1714,84 +1735,91 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
 
         <!-- نبذة وشعار الشركة -->
-        <div class="lg:col-span-2 space-y-4">
-          <a href="#hero" class="inline-block focus:outline-none focus:ring-2 focus:ring-teal-500 rounded-lg">
+        <div class="lg:col-span-1 space-y-4">
+          <a href="/" class="inline-block focus:outline-none focus:ring-2 focus:ring-teal-500 rounded-lg">
             <div class="flex items-center gap-3">
               <div
                 class="w-10 h-10 rounded-xl bg-teal-600 flex items-center justify-center font-bold text-white text-lg">أ
               </div>
               <div>
-                <span class="block text-xl font-black text-white">شركة أصول لنقل العفش</span>
-                <span class="block text-xs text-teal-400">خدمات نقل وتغليف الأثاث بالرياض</span>
+                <span class="block text-xl font-black text-white">شركة أصول</span>
+                <span class="block text-xs text-teal-400">نقل وتغليف العفش بالمملكة</span>
               </div>
             </div>
           </a>
-          <p class="text-slate-400 text-sm leading-relaxed max-w-sm">
-            شركة أصول لنقل العفش بالرياض، حلول عملية لنقل الأثاث المنزلي والمكتبي مع خدمات الفك والتركيب والتغليف المنظم
-            داخل أحياء الرياض.
+          <p class="text-slate-400 text-xs leading-relaxed">
+            الشركة الرائدة في نقل الأثاث السكني والمكتبي بالرياض والشحن لكافة مدن المملكة مع الفك والتركيب والتغليف الفاخر والتأمين الشامل.
           </p>
-          <div class="text-xs text-slate-400 space-y-1">
-            <p>نطاق التغطية: مدينة الرياض والمناطق المحيطة المتاحة</p>
+          <div class="text-xs text-slate-300 font-bold space-y-1 pt-2">
+            <p>الهاتف: <a href="tel:+201210568977" class="text-teal-400 hover:underline">01210568977</a></p>
+            <p>الخدمة: 24 ساعة طوال أيام الأسبوع</p>
           </div>
         </div>
 
-        <!-- روابط سريعة للأقسام -->
+        <!-- خدمات النقل الرئيسية -->
         <div>
-          <h3 class="text-white font-bold text-base mb-4">روابط سريعة</h3>
-          <ul class="space-y-2.5 text-sm">
-            <li><a href="#hero" class="hover:text-teal-400 transition-colors">الرئيسية</a></li>
-            <li><a href="#services" class="hover:text-teal-400 transition-colors">خدماتنا</a></li>
-            <li><a href="#why-us" class="hover:text-teal-400 transition-colors">لماذا أصول؟</a></li>
-            <li><a href="#steps" class="hover:text-teal-400 transition-colors">خطوات النقل</a></li>
-            <li><a href="#pricing-factors" class="hover:text-teal-400 transition-colors">عوامل الأسعار</a></li>
-            <li><a href="furniture-moving-prices/" class="hover:text-teal-400 transition-colors">أسعار نقل العفش
-                بالرياض</a></li>
-            <li><a href="#service-areas" class="hover:text-teal-400 transition-colors">مناطق الخدمة</a></li>
-            <li><a href="#faq" class="hover:text-teal-400 transition-colors">الأسئلة الشائعة</a></li>
+          <h3 class="text-white font-bold text-sm mb-4 pb-2 border-b border-slate-700/60">خدمات نقل العفش</h3>
+          <ul class="space-y-2 text-xs">
+            <li><a href="/services/furniture-moving-in-riyadh/" class="hover:text-teal-400 transition-colors">نقل عفش بالرياض</a></li>
+            <li><a href="/services/furniture-packing-riyadh/" class="hover:text-teal-400 transition-colors">تغليف عفش بالرياض</a></li>
+            <li><a href="/services/furniture-storage-riyadh/" class="hover:text-teal-400 transition-colors">تخزين عفش بالرياض</a></li>
+            <li><a href="/services/furniture-assembly-riyadh/" class="hover:text-teal-400 transition-colors">فك وتركيب أثاث ومطابخ</a></li>
+            <li><a href="/services/dyna-furniture-moving-riyadh/" class="hover:text-teal-400 transition-colors">دينا نقل عفش بالرياض</a></li>
+            <li><a href="/services/best-furniture-moving-company-riyadh/" class="hover:text-teal-400 transition-colors">أفضل شركة نقل عفش</a></li>
+            <li><a href="/services/cheapest-furniture-moving-company-riyadh/" class="hover:text-teal-400 transition-colors">أرخص شركة نقل عفش</a></li>
+            <li><a href="/furniture-moving-prices/" class="text-amber-400 font-bold hover:underline">دليل أسعار نقل العفش</a></li>
           </ul>
         </div>
 
-        <!-- الخدمات المتاحة -->
+        <!-- أحياء الرياض -->
         <div>
-          <h3 class="text-white font-bold text-base mb-4">الخدمات المتاحة</h3>
-          <ul class="space-y-2.5 text-sm">
-            <li><a href="services/furniture-moving-in-riyadh/" class="hover:text-teal-400 transition-colors">نقل عفش
-                بالرياض</a></li>
-            <li><a href="#services" class="hover:text-teal-400 transition-colors">تغليف عفش بالرياض</a></li>
-            <li><a href="#services" class="hover:text-teal-400 transition-colors">فك وتركيب الأثاث</a></li>
-            <li><a href="#services" class="hover:text-teal-400 transition-colors">دينا نقل عفش بالرياض</a></li>
-            <li><a href="#services" class="hover:text-teal-400 transition-colors">نقل أثاث المكاتب</a></li>
-            <li><a href="#services" class="hover:text-teal-400 transition-colors">نقل المطابخ</a></li>
+          <h3 class="text-white font-bold text-sm mb-4 pb-2 border-b border-slate-700/60">أحياء الرياض</h3>
+          <ul class="space-y-2 text-xs">
+            <li><a href="/areas/" class="text-teal-400 font-bold hover:underline">فهرس أحياء الرياض</a></li>
+            <li><a href="/areas/al-narjis/" class="hover:text-teal-400 transition-colors">نقل عفش حي النرجس</a></li>
+            <li><a href="/areas/al-yasmin/" class="hover:text-teal-400 transition-colors">نقل عفش حي الياسمين</a></li>
+            <li><a href="/areas/al-malqa/" class="hover:text-teal-400 transition-colors">نقل عفش حي الملقا</a></li>
+            <li><a href="/areas/al-olaya/" class="hover:text-teal-400 transition-colors">نقل عفش حي العليا</a></li>
+            <li><a href="/areas/hittin/" class="hover:text-teal-400 transition-colors">نقل عفش حي حطين</a></li>
           </ul>
         </div>
 
-        <!-- بيانات التواصل المعتمدة -->
+        <!-- نقل بين المدن -->
         <div>
-          <h3 class="text-white font-bold text-base mb-4">تواصل معنا</h3>
-          <ul class="space-y-3 text-sm">
+          <h3 class="text-white font-bold text-sm mb-4 pb-2 border-b border-slate-700/60">نقل بين المدن</h3>
+          <ul class="space-y-2 text-xs">
+            <li><a href="/cities/" class="text-teal-400 font-bold hover:underline">دليل شحن المدن بالمملكة</a></li>
+            <li><a href="/cities/riyadh-to-jeddah/" class="hover:text-teal-400 transition-colors">نقل عفش من الرياض لجدة</a></li>
+            <li><a href="/cities/riyadh-to-dammam/" class="hover:text-teal-400 transition-colors">نقل عفش من الرياض للدمام</a></li>
+            <li><a href="/cities/riyadh-to-makkah/" class="hover:text-teal-400 transition-colors">نقل عفش من الرياض لمكة</a></li>
+            <li><a href="/cities/riyadh-to-medina/" class="hover:text-teal-400 transition-colors">نقل عفش من الرياض للمدينة</a></li>
+            <li><a href="/cities/riyadh-to-qassim/" class="hover:text-teal-400 transition-colors">نقل عفش من الرياض للقصيم</a></li>
+          </ul>
+        </div>
+
+        <!-- بيانات التواصل والضمان -->
+        <div>
+          <h3 class="text-white font-bold text-sm mb-4 pb-2 border-b border-slate-700/60">طلب وحجز فوري</h3>
+          <ul class="space-y-3 text-xs">
             <li>
-              <span class="block text-xs text-slate-400">القناة الحالية:</span>
-              <a href="#contact-quote" class="text-teal-400 font-bold hover:underline inline-block mt-0.5">
-                نموذج طلب عرض السعر بالموقع
-              </a>
-            </li>
-            <!-- روابط الهاتف والواتساب المعتمدة -->
-            <li data-contact="phone">
-              <span class="block text-xs text-slate-400">الهاتف:</span>
-              <a href="tel:+201210568977"
-                class="text-white font-bold hover:text-teal-400 transition-colors inline-block mt-0.5" dir="ltr">
-                <span data-contact-text="phone">01210568977</span>
-              </a>
-            </li>
-            <li data-contact="whatsapp">
-              <span class="block text-xs text-slate-400">واتساب:</span>
+              <span class="block text-slate-400">عبر واتساب السريع:</span>
               <a href="https://wa.me/201210568977" target="_blank" rel="noopener noreferrer"
-                class="text-teal-400 font-bold hover:underline inline-block mt-0.5">
-                01210568977 (محادثة واتساب)
+                class="text-emerald-400 font-bold hover:underline inline-block mt-0.5">
+                01210568977 (دردشة فورية)
               </a>
             </li>
             <li>
-              <span class="block text-xs text-slate-400">المدينة:</span>
+              <span class="block text-slate-400">اتصال مباشر:</span>
+              <a href="tel:+201210568977" class="text-white font-bold hover:text-teal-400 transition-colors" dir="ltr">
+                01210568977
+              </a>
+            </li>
+            <li>
+              <span class="block text-slate-400">الضمان:</span>
+              <span class="text-slate-300">عقد رسمي وتأمين ضد الكسر والخدش</span>
+            </li>
+            <li>
+              <span class="block text-slate-400">المركز الرئيسي:</span>
               <span class="text-slate-300">الرياض، المملكة العربية السعودية</span>
             </li>
           </ul>
