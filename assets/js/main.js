@@ -1,4 +1,4 @@
-/**
+﻿/**
  * شركة أصول لنقل العفش بالرياض - ملف التفاعلات الرئيسي (Vanilla JavaScript)
  * كود نقي، خفيف، متوافق مع معايير إمكانية الوصول والأداء
  */
@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const COMPANY_CONFIG = {
     name: 'شركة أصول لنقل العفش بالرياض',
     domain: 'https://osoolmove.com',
-    phoneDisplay: '01210568977',
-    phoneTel: '+201210568977',
-    whatsappNumber: '201210568977',
+    phoneDisplay: '0503430106',
+    phoneTel: '+966503430106',
+    whatsappNumber: '966503430106',
     city: 'الرياض، المملكة العربية السعودية',
   };
 
@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!phoneVal) {
         showError(phoneInput, 'يرجى إدخال رقم الجوال للتواصل.');
       } else if (!validPhoneRegex.test(phoneVal)) {
-        showError(phoneInput, 'يرجى إدخال رقم جوال صحيح للتواصل (مثال: 0512345678 أو 01210568977).');
+        showError(phoneInput, 'يرجى إدخال رقم جوال صحيح للتواصل (مثال: 0512345678 أو 0503430106).');
       }
 
       // 3. التحقق من نوع الخدمة
@@ -337,3 +337,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
